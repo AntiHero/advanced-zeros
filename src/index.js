@@ -36,16 +36,6 @@ module.exports = function getZerosCount(number, base) {
         return primeFactros;
     }
 
-    function multiply(factors, powers) {
-        let res = 1;
-        let len = factors.length - 1;
-
-        for (let i = len; i >= 0; i--) {
-            res *= Math.pow(factors[i], powers[i]);
-        }
-        return res;
-    }
-
     /* calculating powers of prime factors of a number, "i.e number is 63,
     prime factors are 3, 7 => 3^2*7^1 = 63, powers are [2, 1]"*/
     function factorize(num) {
